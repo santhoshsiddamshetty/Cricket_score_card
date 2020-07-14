@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="flex column">
+        <div class="header">Cricket Game</div>
+        <div class="flex row center" style="margin-top: 20px;">
+            <div id="start" class="start">Start</div>
+            <div id="stop" class="stoped">Stop</div>
+        </div>
+        <div class="flex column hideTeamA" id="teamA" style="margin-top: 20px;">
+            <div class="flex row center" id="scoreCardHeader">
+                <div class="scoreHeader">Team</div>
+                <div class="scoreHeader">Batsman name </div>
+                <div class="scoreHeader">Current Score</div>
+                <div class="scoreHeader">Batsman Score</div>
+                <div class="scoreHeader">Total Score</div>
+                <div class="scoreHeader">Overs</div>
+                <div class="scoreHeader">Run Rate</div>
+            </div>
+            <div class="flex row center" style="margin-top: 3px;" id="playerScoreCard">
+                <div class="scoreCard">-</div>
+                <div class="scoreCard">-</div>
+                <div class="scoreCard">-</div>
+                <div class="scoreCard">-</div>
+                <div class="scoreCard">0</div>
+                <div class="scoreCard">0-0</div>
+                <div class="scoreCard">0</div>
+            </div>
+        </div>
+        <div id="winner" class="hide" style="text-align: center;">Team A - Won</div>
+        <div id="matchSummary" class="flex column center hide" style="margin-top: 20px; margin-bottom: 30px;">
+            <div class="teamName">Team A - Batting Data</div>
+            <div id="teamASummary" style="margin-bottom: 30px;">
+                <div class="flex row center" id="teamASummaryHeader">
+                    <div class="scoreHeader name">Batsman name </div>
+                    <div class="scoreHeader score">Batsman Score</div>
+                    <div class="scoreHeader score">Overs</div>
+                    <div class="scoreHeader score">WB</div>
+                    <div class="scoreHeader score">NB</div>
+                    <div class="scoreHeader score">0's</div>
+                    <div class="scoreHeader score">4's</div>
+                    <div class="scoreHeader score">6's</div>
+                    <div class="scoreHeader score">Run Rate</div>
+                    <div class="scoreHeader name">Wicket By</div>
+                </div>
+            </div>
+            <div class="teamName">Team B - Batting Data</div>
+            <div id="teamBSummary" style="margin-bottom: 30px;">
+                <div class="flex row center" id="teamBSummaryHeader">
+                    <div class="scoreHeader name">Batsman name </div>
+                    <div class="scoreHeader score">Batsman Score</div>
+                    <div class="scoreHeader score">Overs</div>
+                    <div class="scoreHeader score">WB</div>
+                    <div class="scoreHeader score">NB</div>
+                    <div class="scoreHeader score">0's</div>
+                    <div class="scoreHeader score">4's</div>
+                    <div class="scoreHeader score">6's</div>
+                    <div class="scoreHeader score">Run Rate</div>
+                    <div class="scoreHeader name">Wicket By</div>
+                </div>
+            </div>
+            <div class="bowlingTeamName">Team A - Bowling Data</div>
+            <div id="teamASummaryBowling" style="margin-bottom: 30px;">
+                <div class="flex row center" id="teamASummaryHeader">
+                    <div class="scoreHeader name">Bowler name </div>
+                    <div class="scoreHeader score">Bowler Score</div>
+                    <div class="scoreHeader score">Overs</div>
+                    <div class="scoreHeader score">WB</div>
+                    <div class="scoreHeader score">NB</div>
+                    <div class="scoreHeader score">0's</div>
+                    <div class="scoreHeader score">4's</div>
+                    <div class="scoreHeader score">6's</div>
+                    <div class="scoreHeader score">Wickets</div>
+                </div>
+            </div>
+            <div class="bowlingTeamName">Team B - Bowling Data</div>
+            <div id="teamBSummaryBowling" style="margin-bottom: 30px;">
+                <div class="flex row center" id="teamASummaryHeader">
+                    <div class="scoreHeader name">Bowler name </div>
+                    <div class="scoreHeader score">Bowler Score</div>
+                    <div class="scoreHeader score">Overs</div>
+                    <div class="scoreHeader score">WB</div>
+                    <div class="scoreHeader score">NB</div>
+                    <div class="scoreHeader score">0's</div>
+                    <div class="scoreHeader score">4's</div>
+                    <div class="scoreHeader score">6's</div>
+                    <div class="scoreHeader score">Wickets</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./cricket.js">
+    </script>
+
+</body>
+
+</html>
